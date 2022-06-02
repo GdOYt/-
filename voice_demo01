@@ -1,0 +1,7 @@
+import pyttsx3
+
+engine = pyttsx3.init()
+engine.say("欢迎使用广东外语外贸大学校园导航系统!")
+engine.runAndWait()
+engine.say("广东外语外贸大学图书馆")
+engine.runAndWait()
