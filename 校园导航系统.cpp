@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<Python.h>
 #include<fstream>
 using namespace std;
 #define MaxLen 100 
@@ -149,7 +150,118 @@ void Menu()//系统菜单
 	cout<<"                                                  9.退出"<<endl;
 	cout<<"                                 -----------------------------------------------------"<<endl;
 }
-	
+
+//这个是刚进入系统时的初始化语音
+void init(){
+	Py_Initialize();
+	PyRun_SimpleString("import Init");
+	PyRun_Finalize();
+}
+
+//这是一饭语音
+void canteenDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import canteen01Demo");
+	PyRun_Finalize();
+}
+
+//这是二饭语音
+void Canteen02Demo(){
+	Py_Initialize();
+	PyRun_SimpleString("import Canteen02Demo");
+	PyRun_Finalize();
+}
+
+//这是调用大会堂语音
+void AuditoriumDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import AuditoriumDemo");
+	PyRun_Finalize();
+}
+
+//这是调用门诊语音
+void ClinicDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import ClinicDemo");
+	PyRun_Finalize();
+}
+
+//这是调用宿舍语音
+void Dormitory(){
+	Py_Initialize();
+	PyRun_SimpleString("import DormitoryDemo");
+	PyRun_Finalize();
+}
+
+//这是调用GoGo语音
+void GoGoDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import GoGoDemo");
+	PyRun_Finalize();
+}
+
+//这是调用实验楼语音
+void LaboratoryDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import LaboratoryDemo");
+	PyRun_Finalize();
+}
+
+//这是调用学术报告厅语音
+void LectureDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import LectureDemo");
+	PyRun_Finalize();
+}
+//这是调用图书馆语音
+void LibraryDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import LibraryDemo");
+	PyRun_Finalize();
+}
+
+//这是调用八角楼语音
+void OctagonDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import OctagonDemo");
+	PyRun_Finalize();
+}
+
+//这是调用办公楼语音
+void OfficeDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import OfficeDemo");
+	PyRun_Finalize();
+}
+
+//这是调用教学楼语音
+void SchoolDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import SchoolDemo");
+	PyRun_Finalize();
+}
+
+//这是调用体育场语音
+void StadiumDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import StadiumDemo");
+	PyRun_Finalize();
+}
+
+//这是调用又康超市语音
+void SupermarketDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import SupermarketDemo");
+	PyRun_Finalize();
+}
+
+//这是调用隧道语音
+void TunnelDemo(){
+	Py_Initialize();
+	PyRun_SimpleString("import TunnelDemo");
+	PyRun_Finalize();
+}
+
 void choose(Map &G)//用户选择的功能
 {
 	int choice;
